@@ -6,13 +6,23 @@ export default function AuthButton() {
     return (
       <>
         Signed in as {session?.user?.email}
-        <button onClick={() => signOut()}>Sign out</button>
+        <button
+          className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+          onClick={() => signOut()}
+        >
+          Sign out
+        </button>
       </>
     );
   }
   return (
     <>
-      <button onClick={() => signIn("google")}>Sign in</button>
+      <button
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        onClick={() => signIn("google")}
+      >
+        Sign in
+      </button>
     </>
   );
 }
