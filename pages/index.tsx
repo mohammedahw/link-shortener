@@ -24,6 +24,7 @@ const Home: NextPage = () => {
     toast.loading("Generating link...");
     const { data } = await axios.post("/api/links", { url: url });
     if (!data) {
+      toast.dismiss();
       toast.error("Something went wrong");
       setLoading(false);
       setGeneratedLink("");
