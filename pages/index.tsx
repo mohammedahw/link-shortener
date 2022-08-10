@@ -5,7 +5,6 @@ import Clipboard from "react-clipboard.js";
 import { FiCopy } from "react-icons/fi";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
-import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
   const [url, setUrl] = useState("");
