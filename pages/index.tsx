@@ -25,6 +25,8 @@ const Home: NextPage = () => {
     const { data } = await axios.post("/api/links", { url: url });
     if (!data) {
       toast.error("Something went wrong");
+      setLoading(false);
+      setGeneratedLink("");
     }
     setGeneratedLink(data.link);
     setLoading(false);
