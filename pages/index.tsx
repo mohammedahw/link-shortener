@@ -11,7 +11,6 @@ const Home: NextPage = () => {
   const [url, setUrl] = useState("");
   const [generatedLink, setGeneratedLink] = useState("");
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
 
   const validateInput = (input: string) => {
     return input.match(
