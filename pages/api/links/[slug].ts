@@ -16,9 +16,5 @@ export default async function handler(
     },
   });
 
-  if (!link) {
-    return res.json({ url: null });
-  }
-
-  return res.json({ url: link.url });
+  return res.json({ url: link?.url });
 }
