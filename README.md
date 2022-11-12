@@ -1,4 +1,4 @@
-Link Shortener built using:
+Link Shortener built using: <br />
 1- TypeScript
 2- NEXT.js
 3- Prisma
