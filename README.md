@@ -1,5 +1,5 @@
 Link Shortener built using: <br />
-1- TypeScript
-2- NEXT.js
-3- Prisma
-4- Tailwindcss
+1- TypeScript <br />
+2- NEXT.js <br />
+3- Prisma <br />
+4- Tailwindcss <br />
