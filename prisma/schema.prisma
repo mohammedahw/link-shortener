@@ -8,8 +8,8 @@ generator client {
 }
 
 model ShortLink {
-  id           String   @id @default(cuid())
-  slug         String @unique
-  url          String @unique
-  createdAt    DateTime @default(now())
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  url       String
+  createdAt DateTime @default(now())
 }
